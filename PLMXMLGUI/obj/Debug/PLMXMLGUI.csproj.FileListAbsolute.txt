@@ -1,0 +1,17 @@
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\bin\Debug\PLMXMLGUI.exe.config
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\bin\Debug\PLMXMLGUI.exe
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\bin\Debug\PLMXMLGUI.pdb
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\bin\Debug\PLMXMLParser.exe
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\bin\Debug\PLMXMLParser.pdb
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\bin\Debug\PLMXMLParser.exe.config
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\PLMXMLGUI.csprojResolveAssemblyReference.cache
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\MainWindow.g.cs
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\App.g.cs
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\PLMXMLGUI_MarkupCompile.cache
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\PLMXMLGUI_MarkupCompile.lref
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\MainWindow.baml
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\PLMXMLGUI.g.resources
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\PLMXMLGUI.Properties.Resources.resources
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\PLMXMLGUI.csproj.GenerateResource.Cache
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\PLMXMLGUI.exe
+\\VBOXSVR\killin_m\XMLParser\PLMXMLGUI\obj\Debug\PLMXMLGUI.pdb

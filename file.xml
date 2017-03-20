@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLMXML xmlns="http://www.plmxml.org/Schemas/PLMXMLSchema" xmlns:dcx="http://www.smaragd.dcx.com/Schemas/Smaragd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="6.0" author="killin_m" date="2017-03-20" time="21:21:11">
+    <Instance id="inst2" partRef="elem2">
+        <UserData>
+            <UserValue title="Class" value="000000" />
+            <UserValue title="Left" value="000000" />
+            <UserValue title="Right" value="000000" />
+        </UserData>
+    </Instance>
+    <Part id="elem2" name="A2">
+        <ApplicationRef application="toto" label="000000" />
+        <UserData>
+            <UserValue title="Nomenclature" value="Nomenclature2" />
+            <UserValue title="PartNumber" value="A2" />
+            <UserValue title="ProjectName" value="ProjectName2" />
+            <UserValue title="Data" value="Data2" />
+        </UserData>
+    </Part>
+    <Instance id="inst4" partRef="elem4">
+        <UserData>
+            <UserValue title="Class" value="000000" />
+            <UserValue title="Left" value="000000" />
+            <UserValue title="Right" value="000000" />
+        </UserData>
+    </Instance>
+    <Part id="elem4" name="A4">
+        <ApplicationRef application="toto" label="000000" />
+        <UserData>
+            <UserValue title="Nomenclature" value="Nomenclature4" />
+            <UserValue title="PartNumber" value="A4" />
+            <UserValue title="ProjectName" value="ProjectName4" />
+            <UserValue title="Data" value="Data4" />
+        </UserData>
+    </Part>
+    <Instance id="inst6" partRef="elem6">
+        <UserData>
+            <UserValue title="Class" value="000000" />
+            <UserValue title="Left" value="000000" />
+            <UserValue title="Right" value="000000" />
+        </UserData>
+    </Instance>
+    <Part id="elem6" name="A6" instanceRefs="inst7 inst9 inst11 inst13 inst15">
+        <ApplicationRef application="toto" label="000000" />
+        <UserData>
+            <UserValue title="Nomenclature" value="Nomenclature6" />
+            <UserValue title="PartNumber" value="A6" />
+            <UserValue title="ProjectName" value="ProjectName6" />
+            <UserValue title="Data" value="Data6" />
+        </UserData>
+    </Part>
+    <Instance id="inst7" partRef="elem7">
+        <UserData>
+            <UserValue title="Class" value="000000" />
+        </UserData>
+    </Instance>
+    <Part id="elem7" name="A7">
+        <ApplicationRef application="toto" label="000000" />
+        <UserData>
+            <UserValue title="Nomenclature" value="Nomenclature7" />
+            <UserValue title="PartNumber" value="A7" />
+            <UserValue title="ProjectName" value="ProjectName7" />
+            <UserValue title="Data" value="Data7" />
+        </UserData>
+    </Part>
+    <Instance id="inst9" partRef="elem9">
+        <UserData>
+            <UserValue title="Class" value="000000" />
+        </UserData>
+    </Instance>
+    <Part id="elem9" name="A9">
+        <ApplicationRef application="toto" label="000000" />
+        <UserData>
+            <UserValue title="Nomenclature" value="Nomenclature9" />
+            <UserValue title="PartNumber" value="A9" />
+            <UserValue title="ProjectName" value="ProjectName9" />
+            <UserValue title="Data" value="Data9" />
+        </UserData>
+    </Part>
+    <Instance id="inst11" partRef="elem11">
+        <UserData>
+            <UserValue title="Class" value="000000" />
+        </UserData>
+    </Instance>
+    <Part id="elem11" name="A11">
+        <ApplicationRef application="toto" label="000000" />
+        <UserData>
+            <UserValue title="Nomenclature" value="Nomenclature11" />
+            <UserValue title="PartNumber" value="A11" />
+            <UserValue title="ProjectName" value="ProjectName11" />
+            <UserValue title="Data" value="Data11" />
+        </UserData>
+    </Part>
+    <Instance id="inst13" partRef="elem13">
+        <UserData>
+            <UserValue title="Class" value="000000" />
+        </UserData>
+    </Instance>
+    <Part id="elem13" name="A13">
+        <ApplicationRef application="toto" label="000000" />
+        <UserData>
+            <UserValue title="Nomenclature" value="Nomenclature13" />
+            <UserValue title="PartNumber" value="A13" />
+            <UserValue title="ProjectName" value="ProjectName13" />
+            <UserValue title="Data" value="Data13" />
+        </UserData>
+    </Part>
+    <Instance id="inst15" partRef="elem15">
+        <UserData>
+            <UserValue title="Class" value="000000" />
+        </UserData>
+    </Instance>
+    <Part id="elem15" name="A15">
+        <ApplicationRef application="toto" label="000000" />
+        <UserData>
+            <UserValue title="Nomenclature" value="Nomenclature15" />
+            <UserValue title="PartNumber" value="A15" />
+            <UserValue title="ProjectName" value="ProjectName15" />
+            <UserValue title="Data" value="Data15" />
+        </UserData>
+    </Part>
+</PLMXML>

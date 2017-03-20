@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLMXMLParser", "PLMXMLParser.csproj", "{F7E35260-40E0-453E-87F4-10662FB0F575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLMXMLGUI", "..\PLMXMLGUI\PLMXMLGUI.csproj", "{937B2775-F934-4D43-ACF6-8AE8B7DCDEB6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F7E35260-40E0-453E-87F4-10662FB0F575} = {F7E35260-40E0-453E-87F4-10662FB0F575}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7E35260-40E0-453E-87F4-10662FB0F575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E35260-40E0-453E-87F4-10662FB0F575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E35260-40E0-453E-87F4-10662FB0F575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E35260-40E0-453E-87F4-10662FB0F575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937B2775-F934-4D43-ACF6-8AE8B7DCDEB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937B2775-F934-4D43-ACF6-8AE8B7DCDEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937B2775-F934-4D43-ACF6-8AE8B7DCDEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937B2775-F934-4D43-ACF6-8AE8B7DCDEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
