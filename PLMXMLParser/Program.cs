@@ -11,20 +11,16 @@ namespace PLMXMLParser
 {
     public class Exportation
     {
-        //Liste complète des instances du XML
         static List<Instance> Instances;
-
-        //Liste des sous-ref non existantes
         static List<string> IdSousRefNonExistantes = new List<string>();
-
-        // AFficher ou non la representation 3D
         static bool DisplayRepresentation = false;
 
         static void Main()
         {
 
         }
-        public static int Export(string str)
+
+		public static int Export(string str)
         {
             List<string> Data = new List<string>();
             Data.Add("PartNumber");
@@ -32,8 +28,6 @@ namespace PLMXMLParser
             Data.Add("Nomenclature");
 
             Instances = new List<Instance>();
-
-            #region Instanciation des instances 
 
             if (!File.Exists(str))
             {
@@ -51,60 +45,42 @@ namespace PLMXMLParser
                     {
                         Instance i = new Instance();
 
-                        #region Récupération de l'instance de l'ID
                         reader.MoveToAttribute(0);
                         if (reader.HasValue)
                             i.Id = reader.Value;
                         else
                             throw new ApplicationException("Pas d'ID pour l'instance N° " + Instances.Count.ToString());
-                        #endregion
 
-                        #region Récupération de la référence de pièce
-                        reader.MoveToAttribute(1);
+						reader.MoveToAttribute(1);
                         if (reader.HasValue)
                             i.Partref = reader.Value;
                         else
                             throw new ApplicationException("Pas de référence de pièce pour l'instance N° " + Instances.Count.ToString());
-                        #endregion
-
-                        //Récupération des UserValues relatives à l'instance
+                        
                         i.UserValues = GetUserValuesFromUserData(reader, Data);
-
-                        #region Instanciation de la pièce
 
                         if (reader.ReadToFollowing("Part"))
                         {
-                            //Instanciationd e la pièce
                             Part p = new Part();
                             Representation r = new Representation();
 
-                            #region Récupération de l'instance de l'ID
                             reader.MoveToAttribute(0);
                             if (reader.HasValue)
                                 p.Id = reader.Value;
                             else
                                 throw new ApplicationException("Pas d'ID pour l'instance N° " + Instances.Count.ToString());
-                            #endregion
-
-                            #region Récupération du nom
+                        
                             reader.MoveToAttribute(1);
                             if (reader.HasValue)
                                 p.Name = reader.Value;
-                            #endregion
-
-                            #region Récupération des sous-références
+                        
                             if (reader.MoveToAttribute("instanceRefs"))
                             {
                                 if (reader.HasValue)
                                     p.ListeIdSousRefs = reader.Value.Split(new char[] { ' ' }).ToList<String>();
                             }
 
-                            #endregion
-
-                            //Récupération des UserValues relatives à la pièce
                             p.UserValues = GetUserValuesFromUserData(reader, Data);
-
-                            #region Récupération des données 3D
 
                             if (DisplayRepresentation)
                             {
@@ -123,10 +99,6 @@ namespace PLMXMLParser
                                 p.Representations.Add(r);
                             }
 
-
-                            #endregion
-
-                            //rattachement de la pièce à l'instance + vérif
                             i.Piece = p;
                             if (i.Partref != p.Id)
                             {
@@ -141,11 +113,7 @@ namespace PLMXMLParser
 
                         }
 
-                        #endregion
-
-                        // On rajoute l'instance à la liste générale
                         Instances.Add(i);
-
                     }
                     reader.Close();
                 }
@@ -158,10 +126,8 @@ namespace PLMXMLParser
             {
                 Console.WriteLine(ex.Message);
             }
-            #endregion
 
-            #region Rattachement des sous-références aux instances
-            foreach (Instance i in Instances)
+			foreach (Instance i in Instances)
             {
                 foreach (String idSousref in i.Piece.ListeIdSousRefs)
                 {
@@ -174,11 +140,9 @@ namespace PLMXMLParser
                 }
 
             }
-            #endregion
 
             SaveTab(str);
 
-            #region Liste des sous-references non existentes
             if (IdSousRefNonExistantes.Count > 0)
             {
                 Console.WriteLine();
@@ -188,15 +152,9 @@ namespace PLMXMLParser
                     Console.WriteLine(id);
                 }
             }
-            #endregion
             return (0);
         }
 
-        /// <summary>
-        /// Récupère une d'objet UserValues depuis un noeud UserDate
-        /// </summary>
-        /// <param name="reader"></param>
-        /// <returns></returns>
         private static Dictionary<string, string> GetUserValuesFromUserData(XmlReader reader, List<string> Data)
         {
             Dictionary<string, string> userValues = new Dictionary<string, string>();
@@ -227,11 +185,6 @@ namespace PLMXMLParser
             return (false);
         }
 
-        /// <summary>
-        /// Instantie l'objet UserValue une fois positionné sur un tag UserData
-        /// </summary>
-        /// <param name="reader">l'xml reader</param>
-        /// <returns>UserValue</returns>
         private static UserValue GetUserValueFromReader(XmlReader reader)
         {
             UserValue userValue = new UserValue();

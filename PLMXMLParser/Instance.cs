@@ -10,7 +10,6 @@ namespace PLMXMLParser
     {
         public string Id { get; set; }
         public string Partref { get; set; }
-        //Pièce de l'instance
         public Part Piece { get; set; }
         public Dictionary<string, string> UserValues { get; set; }
 

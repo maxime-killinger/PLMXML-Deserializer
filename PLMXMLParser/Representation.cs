@@ -8,9 +8,7 @@ namespace PLMXMLParser
 {
     public class Representation
     {
-        //Liste des uservalues
         public Dictionary<string, string> UserValues { get; set; }
-
         public string Id { get; set; }
         public string Load { get; set; }
 
