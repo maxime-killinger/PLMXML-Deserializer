@@ -1,5 +1,0 @@
-\\VBOXSVR\killin_m\XMLParser\PLMXMLParser\bin\Debug\PLMXMLParser.exe.config
-\\VBOXSVR\killin_m\XMLParser\PLMXMLParser\bin\Debug\PLMXMLParser.exe
-\\VBOXSVR\killin_m\XMLParser\PLMXMLParser\bin\Debug\PLMXMLParser.pdb
-\\VBOXSVR\killin_m\XMLParser\PLMXMLParser\obj\Debug\PLMXMLParser.exe
-\\VBOXSVR\killin_m\XMLParser\PLMXMLParser\obj\Debug\PLMXMLParser.pdb
